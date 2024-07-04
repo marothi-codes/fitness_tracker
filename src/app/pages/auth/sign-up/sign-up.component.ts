@@ -15,9 +15,17 @@ import { CUSTOM_DATE_FORMATS } from '../../../constants/custom-date-formats';
   ]
 })
 export class SignUpComponent implements OnInit {
+  maxDate: Date;
+  minDate: Date;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.maxDate = new Date();
+    this.maxDate.setFullYear(this.maxDate.getFullYear() - 18);
+
+    this.minDate = new Date();
+    this.minDate.setFullYear(this.minDate.getFullYear() - 100);
   }
 
   onSubmit(form: NgForm) {

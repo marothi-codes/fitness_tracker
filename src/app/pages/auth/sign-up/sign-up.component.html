@@ -29,6 +29,8 @@
         ngModel
         name="dob"
         required
+        [min]="minDate"
+        [max]="maxDate"
         #dobInput="ngModel"
       />
         <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
