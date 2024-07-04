@@ -60,6 +60,15 @@
         </mat-error>
     </mat-form-field>
 
+    <!-- Terms of Use -->
+    <mat-checkbox
+      ngModel
+      name="terms"
+      #termsInput="ngModel"
+      >
+      I agree to the <a href="#">Terms of Use</a>
+    </mat-checkbox>
+
     <button type="submit" mat-raised-button color="primary">Sign Up</button>
   </form>
 </section>
