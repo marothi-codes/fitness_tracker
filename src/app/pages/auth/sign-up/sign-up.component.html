@@ -1,5 +1,5 @@
 <section class="signup-form">
-  <form fxLayout="column" fxLayoutAlign="center center" #f="ngForm" (ngSubmit)="onSubmit(f)">
+  <form fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="2px" #f="ngForm" (ngSubmit)="onSubmit(f)">
     <!-- Email -->
     <mat-form-field>
       <mat-label>Email</mat-label>
@@ -64,11 +64,19 @@
     <mat-checkbox
       ngModel
       name="terms"
+      required
       #termsInput="ngModel"
       >
       I agree to the <a href="#">Terms of Use</a>
     </mat-checkbox>
 
-    <button type="submit" mat-raised-button color="primary">Sign Up</button>
+    <button
+      type="submit"
+      mat-raised-button
+      color="primary"
+      [disabled]="f.invalid"
+      >
+      Sign Up
+    </button>
   </form>
 </section>
