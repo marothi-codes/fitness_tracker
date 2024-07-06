@@ -1,1 +1,12 @@
-<router-outlet></router-outlet>
+<mat-sidenav-container>
+
+  <mat-sidenav #sidebar role="navigation">
+
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <button (click)="sidebar.toggle()">Toggle Sidebar</button>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
