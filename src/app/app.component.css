@@ -4,7 +4,8 @@ mat-toolbar {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-div a[routerLink] {
+div a[routerLink],
+div a {
   color: white;
   cursor: pointer;
   font-size: 12pt;
@@ -19,6 +20,6 @@ div a[routerLink].logo {
 div a[routerLink]:hover,
 div a[routerLink]:focus,
 div a[routerLink]:active {
-  color: white;
+  color: rgb(245, 245, 245);
   text-decoration: none;
 }

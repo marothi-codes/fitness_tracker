@@ -1,7 +1,24 @@
 <mat-sidenav-container>
 
   <mat-sidenav #sidebar role="navigation">
+    <mat-nav-list>
+      <a mat-list-item routerLink="/login" (click)="sidebar.toggle()">
+        <mat-icon>lock_open</mat-icon> Login
+      </a>
+      <a mat-list-item routerLink="/sign-up" (click)="sidebar.toggle()">
+        <mat-icon>face</mat-icon> Sign Up
+      </a>
+      <a mat-list-item routerLink="/training" (click)="sidebar.toggle()">
+        <mat-icon>library_books</mat-icon> Training
+      </a>
 
+      <mat-list-item>
+        <button mat-icon-button>
+          <mat-icon>exit_to_app</mat-icon> Logout
+        </button>
+      </mat-list-item>
+
+    </mat-nav-list>
   </mat-sidenav>
 
   <mat-sidenav-content>
@@ -17,9 +34,18 @@
       </div>
 
       <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs>
-        <a routerLink="/login">Login</a>
-        <a routerLink="/sign-up">Sign Up</a>
-        <a routerLink="/training">Training</a>
+        <a routerLink="/login">
+          <mat-icon>lock_open</mat-icon> Login
+        </a>
+        <a routerLink="/sign-up">
+          <mat-icon>face</mat-icon> Sign Up
+        </a>
+        <a routerLink="/training">
+          <mat-icon>library_books</mat-icon> Training
+        </a>
+        <a>
+          <mat-icon>exit_to_app</mat-icon> Logout
+        </a>
       </div>
     </mat-toolbar>
 
