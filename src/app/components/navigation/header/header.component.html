@@ -1,0 +1,26 @@
+<mat-toolbar>
+      <div fxHide.gt-xs>
+        <button mat-icon-button style="color: white;" mat-icon-button (click)="onToggleSidenav()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      </div>
+
+      <div>
+        <a class="logo" routerLink="/">Fitness Tracker</a>
+      </div>
+
+      <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs>
+        <a routerLink="/login">
+          <mat-icon>lock_open</mat-icon> Login
+        </a>
+        <a routerLink="/sign-up">
+          <mat-icon>face</mat-icon> Sign Up
+        </a>
+        <a routerLink="/training">
+          <mat-icon>library_books</mat-icon> Training
+        </a>
+        <a>
+          <mat-icon>exit_to_app</mat-icon> Logout
+        </a>
+      </div>
+    </mat-toolbar>

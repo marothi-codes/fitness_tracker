@@ -1,0 +1,25 @@
+mat-toolbar {
+  background-color: var(--sidenav-bg-color);
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+div a[routerLink].logo {
+  font-size: 16pt;
+}
+
+div a[routerLink],
+div a {
+  color: white;
+  cursor: pointer;
+  font-size: 12pt;
+  padding: 0.4rem;
+  text-decoration: none;
+}
+
+div a[routerLink]:hover,
+div a[routerLink]:focus,
+div a[routerLink]:active {
+  color: rgb(245, 245, 245);
+  text-decoration: none;
+}

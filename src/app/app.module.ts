@@ -10,6 +10,8 @@ import { SignUpComponent } from './pages/auth/sign-up/sign-up.component';
 import { LoginComponent } from './pages/auth/login/login.component';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
 import { FormsModule } from '@angular/forms';
+import { HeaderComponent } from './components/navigation/header/header.component';
+import { SidebarNavListComponent } from './components/navigation/sidebar-nav-list/sidebar-nav-list.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { FormsModule } from '@angular/forms';
     LoginComponent,
     SignUpComponent,
     WelcomeComponent,
+    HeaderComponent,
+    SidebarNavListComponent,
   ],
   imports: [
     AppRoutingModule,
